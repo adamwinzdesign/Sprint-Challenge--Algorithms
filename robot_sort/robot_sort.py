@@ -103,6 +103,7 @@ class SortingRobot:
 # if the item the robot is holding has a higher value, item is swapped and robot moves left again until it cannot move left any longer, which also means it is back at [0]
 # light is still off
 # start moving right again, but this time, if compare_item == 1, turn light on
+# when list is sorted and light is off, recursion breaks
 
 
     def sort(self):
@@ -158,3 +159,5 @@ if __name__ == "__main__":
 
     robot.sort()
     print(robot._list)
+
+# O(n^2)??
